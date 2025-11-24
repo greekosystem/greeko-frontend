@@ -58,7 +58,7 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'user-story')
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # Use token to allow force push
           token: ${{ secrets.MK_TOKEN }}
